@@ -33,12 +33,20 @@ public class Intro extends ApplicationAdapter {
   }
 
   private void initialisationSprites() {
+    Sprite sprite;
     sprites = new ArrayList<>(NB_SPRITES);
-    for (Sprite sprite : sprites) {
-      sprite = new Sprite("chien.png");
-      sprites.add(sprite);
-    }
-    System.out.print(sprites.size());
+    sprite = new Sprite("chien.png");
+
+    sprites.add(sprite);
+    sprites.add(sprite);
+    sprites.add(sprite);
+    sprites.add(sprite);
+    sprites.add(sprite);
+
+    // for (Sprite sprite : sprites) {
+    // sprites.add(sprite);
+    // }
+    // System.out.print(sprites.size());
   }
 
   private void initialiserJoueur() {
